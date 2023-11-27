@@ -1,0 +1,7 @@
+**/.env
+**/__pycache__
+**/test.py
+!example-model/.env
+!example-model/test.py
+*.yml
+*.pth.tar

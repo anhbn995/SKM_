@@ -1,0 +1,51 @@
+{
+  "name": "test",
+  "folder_id": null,
+  "key": null,
+  "user_id": 86,
+  "created_by": 23,
+  "model_id": "dd43f076-f379-48f0-b39b-baa73d0445b4",
+  "image_id": "ed44b5e7-ccf0-4a50-a4e0-1078f8e7943d",
+  "file_name": "test",
+  "model_version_id": 109,
+  "region": "eu",
+  "wks_id": "5eb75753-cc0b-4897-90fc-411013322371",
+  "task_id": 30299,
+  "predictor": "unet",
+  "rate": "100",
+  "is_docker": true,
+  "model": {
+    "docker_image_name": null,
+    "version": "1.0.0",
+    "path": "/data/86/5eb75753cc0b489790fc411013322371/models/dd43f076f37948f0b39bbaa73d0445b4/model.h5",
+    "input": null,
+    "meta": {
+      "numbands": 3,
+      "trainer_size": 128,
+      "labels": [{ "value": 2, "name": "Label 1", "color": "#00ff1a" }],
+      "optimizer": "adam",
+      "loss": "categorical_crossentropy",
+      "metrics": ["accuracy"],
+      "batch_size": null,
+      "epochs": 50,
+      "patience_early": null,
+      "factor": null,
+      "patience_reduce": null,
+      "min_lr": null,
+      "input_type": "raster",
+      "n_filters": 16,
+      "dropout": 0.5,
+      "batchnorm": true,
+      "img_size": 128,
+      "label_count": 2
+    },
+    "output_type": null
+  },
+  "param": {
+    "nodata": "0",
+    "image_resolution": 10.011816904230345,
+    "image_source": null
+  },
+  "folder_name": null,
+  "folder_parent_id": null
+}

@@ -1,0 +1,7 @@
+Input: Image and label .tif files
+	- Put all image and label file into same folder ./raw_img
+	- Pass the folder and output_path into cut_image_and_masks_v2.py then execute
+	- Label must have same name with image with postfix "_label"
+	- Change the contain folder's name to "data"
+	
+Output: Weights and logs of the model saved in ./logs

@@ -1,0 +1,36 @@
+<graph id="Graph">
+  <version>1.0</version>
+  <node id="Read">
+    <operator>Read</operator>
+    <sources/>
+    <parameters class="com.bc.ceres.binding.dom.XppDomElement">
+      <file>${input}</file>
+    </parameters>
+  </node>
+  <node id="SnaphuExport">
+    <operator>SnaphuExport</operator>
+    <sources>
+      <sourceProduct refid="Read"/>
+    </sources>
+    <parameters class="com.bc.ceres.binding.dom.XppDomElement">
+      <targetFolder>${output}</targetFolder>
+      <statCostMode>TOPO</statCostMode>
+      <initMethod>MST</initMethod>
+      <numberOfTileRows>10</numberOfTileRows>
+      <numberOfTileCols>10</numberOfTileCols>
+      <numberOfProcessors>4</numberOfProcessors>
+      <rowOverlap>200</rowOverlap>
+      <colOverlap>200</colOverlap>
+      <tileCostThreshold>500</tileCostThreshold>
+    </parameters>
+  </node>
+  <applicationData id="Presentation">
+    <Description/>
+    <node id="Read">
+            <displayPosition x="155.0" y="138.0"/>
+    </node>
+    <node id="SnaphuExport">
+      <displayPosition x="306.0" y="139.0"/>
+    </node>
+  </applicationData>
+</graph>

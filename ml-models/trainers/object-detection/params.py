@@ -1,0 +1,33 @@
+from environs import Env
+env = Env()
+env.read_env()
+
+ROOT_DATA_FOLDER = env.str('ROOT_DATA_FOLDER')
+
+IMAGE_PATH = env.str('IMAGE_PATH')
+
+OUTPUT_DIR = env.str('OUTPUT_DIR')
+
+TMP_PATH = env.str('TMP_PATH')
+
+TASK_ID = env.int('TASK_ID', -1)
+
+BROADCAST = env.str('BROADCAST', '')
+
+HOSTED_ENDPOINT = env.str('HOSTED_ENDPOINT', '')
+
+BOUND_PATH = env.str('BOUND_PATH')
+
+ANNOTATION_PATH = env.str('ANNOTATION_PATH')
+
+TRAINER_SIZE = env.int('TRAINER_SIZE', 512)
+IMAGE_RESIZE_MODE = env.str('IMAGE_RESIZE_MODE', 'square')
+RPN_ANCHOR_SCALES = env.str('RPN_ANCHOR_SCALES', '[8, 16, 32, 64, 128]')
+STEPS_PER_EPOCH = env.int('STEPS_PER_EPOCH', 250)
+VALIDATION_STEPS = env.int('VALIDATION_STEPS', 50)
+MAX_GT_INSTANCES = env.int('MAX_GT_INSTANCES', 300)
+ROI_POSITIVE_RATIO = env.float('ROI_POSITIVE_RATIO', 0.66)
+RPN_NMS_THRESHOLD = env.float('RPN_NMS_THRESHOLD', 0.7)
+EPOCH1 = env.int('EPOCH1', 50)
+EPOCH2 = env.int('EPOCH2', 50)
+EPOCH3 = env.int('EPOCH3', 50)

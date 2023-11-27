@@ -1,0 +1,10 @@
+from environs import Env
+env = Env()
+env.read_env()
+ROOT_DATA_FOLDER = env.str('ROOT_DATA_FOLDER')
+INPUT_PATHS = env.list('INPUT_PATHS', [])
+OUTPUT_PATH = env.str('OUTPUT_PATH')
+TMP_PATH = env.str('TMP_PATH')
+SORT_AMOUNT_OF_CLOUDS = env.bool('SORT_AMOUNT_OF_CLOUDS', True)
+FIRST_IMAGE_PATH = env.str('FIRST_IMAGE_PATH', None)
+INPUT_PATH= env.str('INPUT_PATH', None)

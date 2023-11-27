@@ -1,0 +1,127 @@
+{
+  "name": "142",
+  "folder_id": null,
+  "key": null,
+  "user_id": 86,
+  "created_by": 170,
+  "labels": [{ "value": 2, "color": "#981A89", "name": "ruong" }],
+  "type": "unet",
+  "image_id": "cf7ee4bb-efe6-46e9-83d8-38d256e0dc3e",
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [78.98372347553419, 17.70948643097364],
+            [78.98408094584312, 17.709384271885995],
+            [78.98390731740739, 17.709024282257417],
+            [78.98359070084842, 17.70920427716237],
+            [78.98372347553419, 17.70948643097364]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "64a82962989bf3a6de17fdc1b18431bc",
+      "type": "Feature",
+      "properties": { "label": 2 }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [78.98386855545334, 17.708863256369867],
+            [78.98415631970494, 17.70871632349771],
+            [78.98399977595318, 17.708450966810986],
+            [78.98373273072627, 17.708578162626935],
+            [78.98386855545334, 17.708863256369867]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "2ba4b88549ab9a16a9b1189ab2351e55",
+      "type": "Feature",
+      "properties": { "label": 2 }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [78.98356697851688, 17.70915712175396],
+            [78.98388697236567, 17.708983872817228],
+            [78.98375344975221, 17.70873825378432],
+            [78.98342654956241, 17.708896151772606],
+            [78.98356697851688, 17.70915712175396]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "cb075e60b3406533eda97b0a161dea3b",
+      "type": "Feature",
+      "properties": { "label": 2 }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [78.98416855353781, 17.708725097374895],
+            [78.98440381282876, 17.70861129068254],
+            [78.98426228966167, 17.70830313681327],
+            [78.98401416462895, 17.708451961190875],
+            [78.98416855353781, 17.708725097374895]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "1ec84ca38157204ae4930c4fdd7b980f",
+      "type": "Feature",
+      "properties": { "label": 2 }
+    }
+  ],
+  "bound": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "id": "5abcb4628ba4f4b8623831c504d189ac",
+        "type": "Feature",
+        "properties": { "eofId": "9e584106-7121-4502-b7ef-1dc4a9df88aa" },
+        "geometry": {
+          "coordinates": [
+            [
+              [78.9806905649541, 17.711076465565654],
+              [78.98709743028957, 17.711076465565654],
+              [78.98709743028957, 17.706915146535763],
+              [78.9806905649541, 17.706915146535763],
+              [78.9806905649541, 17.711076465565654]
+            ]
+          ],
+          "type": "Polygon"
+        }
+      }
+    ]
+  },
+  "task_name": "142",
+  "input_type": "vector",
+  "trainer_id": 1,
+  "region": "eu",
+  "wks_id": "5eb75753-cc0b-4897-90fc-411013322371",
+  "task_id": 30777,
+  "trainer_size": 128,
+  "RPN_ANCHOR_SCALES": [32, 64, 128, 256, 512],
+  "epoch1": 10,
+  "epoch2": 10,
+  "epoch3": 10,
+  "STEPS_PER_EPOCH": 250,
+  "VALIDATION_STEPS": 50,
+  "MAX_GT_INSTANCES": 300,
+  "ROI_POSITIVE_RATIO": 0.75,
+  "RPN_NMS_THRESHOLD": 0.7,
+  "epochs": 50,
+  "n_filters": 16,
+  "batchnorm": true,
+  "dropout": 0.5,
+  "optimizer": "adam",
+  "loss": "categorical_crossentropy",
+  "metrics": ["accuracy"],
+  "folder_name": null,
+  "folder_parent_id": null
+}

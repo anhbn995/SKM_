@@ -1,0 +1,50 @@
+{
+    "Cloud_model": {
+        "name": "Unetxz",
+        "input_size": [
+            128,
+            128,
+            4
+        ],
+        "filter_num": [
+            128,
+            256,
+            512,
+            1024
+        ],
+        "n_labels": 1
+    },
+    "Green_model": {
+        "name": "att_unet",
+        "input_size": [
+            128,
+            128,
+            4
+        ],
+        "filter_num": [
+            128,
+            256,
+            512,
+            1024
+        ],
+        "n_labels": 1,
+        "batch_norm" : false
+    },
+    "Water_model": {
+        "name": "unet_3plus",
+        "input_size": [
+            256,
+            256,
+            4
+        ],
+        "filter_num": [
+            32,
+            64,
+            128,
+            256,
+            512
+        ],
+        "n_labels": 1,
+        "batch_norm" : true
+    }
+}

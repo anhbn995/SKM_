@@ -1,0 +1,32 @@
+[
+  {
+    "key": "predict_size",
+    "type": "int",
+    "default": 512
+  },
+  {
+    "key": "DETECTION_MAX_INSTANCES",
+    "type": "float",
+    "default": 300
+  },
+  {
+    "key": "DETECTION_NMS_THRESHOLD",
+    "type": "float",
+    "default": 0.3
+  },
+  {
+    "key": "IMAGE_MAX_DIM",
+    "type": "int",
+    "default": null
+  },
+  {
+    "key": "IMAGE_MIN_DIM",
+    "type": "int",
+    "default": null
+  },
+  {
+    "key": "DETECTION_MIN_CONFIDENCE",
+    "type": "float",
+    "default": 0.6
+  }
+]
